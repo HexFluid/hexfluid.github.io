@@ -2503,6 +2503,7 @@ input, select, textarea {
 				letter-spacing: 0.1em;
 			}
 
+/*
 				#logo a {
 					display: block;
 					background-color: #c94663;
@@ -2514,6 +2515,7 @@ input, select, textarea {
 					text-decoration: none;
 					color: #fff;
 				}
+*/
 
 		/* Content */
 
@@ -2759,10 +2761,11 @@ input, select, textarea {
 			}
 
 		/* Logo */
-
+/*
 			#logo {
 				display: none;
 			}
+*/
 
 		/* Nav */
 
@@ -2888,9 +2891,10 @@ input, select, textarea {
 
 		/* Logo */
 
-			#logo {
+/*			#logo {
 				display: none;
 			}
+*/
 
 		/* Nav */
 
