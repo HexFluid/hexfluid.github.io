@@ -171,11 +171,12 @@ figcaption {
 	}
 
 /* column  XH Mod */
-.column {
-  float: left;
-  /* width: 50%;*/
-  padding: 5px;
-}
+	.column {
+	  float: left;
+	  width: 50%;
+	  padding: 5px;
+		text-align: center
+	}
 
 
 /* Row */
@@ -1724,6 +1725,21 @@ figcaption {
 	}
 
 /* Section/Article */
+/* XH Mod for header background image */
+	.CompHeader {
+		display:flex;
+		background: url("../../images/TTL-1-Scale_Geom_zoom.jpg") 100% 100% no-repeat;
+		background-size: 1040px 150px
+	}
+
+		.CompHeader > h2 {
+			margin: 0 0 0.8em 0.2em;
+			font-family: 'Open Sans Condensed', sans-serif;
+			font-weight: 300;
+			display: block;
+			margin-top: 1em;
+			color: white;
+		}
 
 	header {
 		margin: 0 0 2em 0;
