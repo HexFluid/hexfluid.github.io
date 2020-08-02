@@ -173,7 +173,7 @@ figcaption {
 /* column  XH Mod */
 .column {
   float: left;
-  width: 50%;
+  /* width: 50%;*/
   padding: 5px;
 }
 
