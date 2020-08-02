@@ -72,6 +72,11 @@ input, select, textarea {
 	appearance: none;
 }
 
+/* XH Mod for figcaption style */
+figcaption {
+	text-align: center
+}
+
 /* Basic */
 
 	html {
