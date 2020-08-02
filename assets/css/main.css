@@ -1728,16 +1728,16 @@ figcaption {
 /* XH Mod for header background image */
 	.CompHeader {
 		display:flex;
-		background: url("../../images/TTL-1-Scale_Geom_zoom.jpg") 100% 100% no-repeat;
-		background-size: 1040px 150px
+		background: url("../../images/TTL-1-Scale_Geom_zoom.jpg");
+		background-size: cover;
+	  background-repeat: no-repeat;
+	  background-position: 50% 50%;
 	}
 
 		.CompHeader > h2 {
-			margin: 0 0 0.8em 0.2em;
+			margin:0 0 0.8em 0.3em;
 			font-family: 'Open Sans Condensed', sans-serif;
 			font-weight: 300;
-			display: block;
-			margin-top: 1em;
 			color: white;
 		}
 
