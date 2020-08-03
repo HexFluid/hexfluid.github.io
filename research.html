@@ -17,15 +17,32 @@
 			<div id="content">
 				<div class="inner">
 
+				  <!-- Guide -->
+					<p><strong> Contents </strong></p>
+					<ul>
+						<li> <a href="#TurbHeader"> Turbulence Modeling</a> </li>
+						<ol>
+							<li> <a href="#DDES"> Delayed-Detached Eddy Simulation for Separated Compressor Flows </a> </li>
+							<li> <a href="#SAUQ"> Parametric Uncertainty Quantification of RANS Turbulence Model </a> </li>
+						</ol>
+
+						<li> <a href="#CompHeader"> Compressor Aerodynamics</a> </li>
+						<ol>
+							<li> <a href="#FlowInst"> Flow Instabilities in Centrifugal Compressors </a> </li>
+							<li> <a href="#PerfOpt"> Transonic Flows in Centrifugal Compressors </a> </li>
+						</ol>
+
+          <hr />
+
 					<!-- Turbulence Modeling -->
 						<article class="box post post-excerpt">
 							<header class="TurbHeader">
-								<h2>Turbulence Modeling</h2>
+								<h2 id='TurbHeader'>Turbulence Modeling</h2>
 							</header>
 							<ol>
                 <!-- Turbulence Modeling: DDES -->
 								<header>
-									<h3><li> Delayed-Detached Eddy Simulation for Separated Compressor Flows </li></h2>
+									<h3 id='DDES'><li> Delayed-Detached Eddy Simulation for Separated Compressor Flows </li></h3>
 								</header>
 								<p>
 
@@ -33,7 +50,7 @@
 
                 <!-- Turbulence Modeling: SAUQ -->
 								<header>
-									<h3><li> Parametric Uncertainty Quantification of RANS Turbulence Model </li></h2>
+									<h3 id='SAUQ'><li> Parametric Uncertainty Quantification of RANS Turbulence Model </li></h3>
 								</header>
 								<p>
 
@@ -43,17 +60,23 @@
 								  <div class="column">
 								    <a href="images/UQ_Framework.jpg" class="image"><img src="images/UQ_Framework.jpg" alt="UQ_Framework" style="width:80%"></a>
 										<figcaption>Illustration of the metamodel-based UQ framework</figcaption>
-										<p> </p>
-										<a href="images/NASA_nut_grad.jpg" class="image"><img src="images/NASA_nut_grad.jpg" alt="NASA_nut_grad" style="width:80%"></a>
-										<figcaption>Sensitivity of circumferentially averaged turbulent viscosity of Rotor 67 on Sparlart-Allmaras turbulence model coefficients </figcaption>
+									</div>
 
+									<div class="column">
+										<a href="images/NASA_nut_grad.jpg" class="image"><img src="images/NASA_nut_grad.jpg" alt="NASA_nut_grad" style="width:76%"></a>
+										<figcaption>Sensitivity of circumferentially averaged turbulent viscosity of Rotor 67 on Sparlart-Allmaras turbulence model coefficients </figcaption>
 								  </div>
+								</div>
+								<p> </p>
+
+								<div class="row">
 								  <div class="column">
-										<a href="images/UQ_NASA_Pr.jpg" class="image"><img src="images/UQ_NASA_Pr.jpg" alt="UQ_NASA_Pr" style="width:70%"></a>
+										<a href="images/UQ_NASA_Pr.jpg" class="image"><img src="images/UQ_NASA_Pr.jpg" alt="UQ_NASA_Pr" style="width:75%"></a>
 										<figcaption>Uncertainty of total pressure ratio of NASA Rotor 67</figcaption>
-										<p> </p>
-										<a href="images/UQ_NASA_rp.jpg" class="image"><img src="images/UQ_NASA_rp.jpg" alt="UQ_NASA_rp" style="width:100%"></a>
-										<figcaption>Uncertainty of circumferentially averaged exit radial profiles of Rotor 67</figcaption>
+								  </div>
+									<div class="column">
+										<a href="images/NASA_Sens.jpg" class="image"><img src="images/NASA_Sens.gif" alt="NASA_Sens" style="width:80%"></a>
+										<figcaption>Sensitivity of performance characteristics of NASA Rotor 67 on Sparlart-Allmaras turbulence model coefficients </figcaption>
 								  </div>
 								</div>
                 <p> </p>
@@ -71,17 +94,18 @@
 
 						  </ol>
 						</article>
+          <hr />
 
 					<!-- Compressor Aerodynamics -->
 						<article class="box post post-excerpt">
 							<header class="CompHeader">
-								<h2>Compressor Aerodynamics</h2>
+								<h2 id='CompHeader'>Compressor Aerodynamics</h2>
 							</header>
 							<ol>
 
 								<!-- Compressor Aerodynamics: Flow Instabilities -->
 								<header>
-									<h3><li> Flow Instabilities in Centrifugal Compressors </li></h2>
+									<h3 id='FlowInst'><li> Flow Instabilities in Centrifugal Compressors </li></h3>
 								</header>
 								<p>
                   Flow instabilities with various temporal and spatial scales narrow the stable operating range of centrifugal compressors. In this study, the pathology of a high pressure ratio centrifugal
@@ -125,7 +149,7 @@
 
 				      	<!-- Compressor Aerodynamics: Transonic Flows -->
 								<header>
-									<h3><li> Transonic Flows in Centrifugal Compressors </li></h2>
+									<h3 id='PerfOpt'><li> Transonic Flows in Centrifugal Compressors </li></h3>
 								</header>
 								<p>
                   Shock and shock-leakage interaction in transonic centrifugal compressors deteriorate the flow field and lower the compressor efficiency. In this study, the loss mechanism of transonic centrifugal
@@ -167,6 +191,7 @@
 
 						  </ol>
 						</article>
+          <hr />
 
 
 				</div>
