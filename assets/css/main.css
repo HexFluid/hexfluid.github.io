@@ -89,7 +89,7 @@ figcaption {
 
 	body {
 		background-color: #e8e8e8;
-		background-image: url("images/bg02.png");
+		/* background-image: url("images/bg02.png"); */
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -1726,6 +1726,21 @@ figcaption {
 
 /* Section/Article */
 /* XH Mod for header background image */
+	.TurbHeader {
+		display:flex;
+		background: url("../../images/bstep_DDES.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+	}
+
+		.TurbHeader > h2 {
+			margin:0 0 0.5em 0.3em;
+			font-family: 'Open Sans Condensed', sans-serif;
+			font-weight: 600;
+			color: black;
+		}
+
 	.CompHeader {
 		display:flex;
 		background: url("../../images/TTL-1-Scale_Geom_zoom.jpg");
@@ -1737,7 +1752,7 @@ figcaption {
 		.CompHeader > h2 {
 			margin:0 0 0.5em 0.3em;
 			font-family: 'Open Sans Condensed', sans-serif;
-			font-weight: 300;
+			font-weight: 600;
 			color: white;
 		}
 
@@ -1770,6 +1785,7 @@ figcaption {
 	}
 
 		.image img {
+			text-align: center
 			display: block;
 			width: 100%;
 		}
@@ -1919,7 +1935,7 @@ figcaption {
 			text-decoration: none;
 			color: inherit;
 			background-color: #e8e8e8;
-			background-image: url("images/bg02.png");
+			/* background-image: url("images/bg02.png"); */
 			color: #565656;
 			margin: 0 0.4em 0 0;
 			border-radius: 0.4em;
@@ -2364,7 +2380,7 @@ figcaption {
 	#content {
 		position: relative;
 		background-color: #fff;
-		background-image: url("images/bg02.png");
+		/* background-image: url("images/bg02.png"); */
 		width: 100%;
 		-moz-flex-grow: 1;
 		-webkit-flex-grow: 1;
@@ -2623,7 +2639,7 @@ figcaption {
 				width: 5.5em;
 				overflow: hidden;
 				background-color: #fff;
-				background-image: url("images/bg02.png");
+				/* background-image: url("images/bg02.png"); */
 				left: -10.5em;
 				top: 0;
 				padding: 1.5em 1em 1.5em 1em;
