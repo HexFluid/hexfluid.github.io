@@ -18,7 +18,7 @@
 				<div class="inner">
 
 				  <!-- Guide -->
-					<p><strong> Contents </strong></p>
+					<p style="text-align:justify"><strong> Contents </strong></p>
 					<ul>
 						<li> <a href="#TurbHeader"> Turbulence Modeling</a> </li>
 						<ol>
@@ -42,17 +42,25 @@
 							<ol>
                 <!-- Turbulence Modeling: DDES -->
 								<header>
-									<h3 id='DDES'><li> Delayed-Detached Eddy Simulation for Separated Compressor Flows</li></h3>
+									<h3 id='DDES'><li> Detached Eddy Simulation for Separated Compressor Flows</li></h3>
 								</header>
-								<p>
-                Delayed-detached eddy simulation (DDES)
+								<p style="text-align:justify">
+									High-fidelity turbulence data are indispensable for training a data-drive RANS turbulence model. For turbomachinery applications, the measured
+									data often suffer from large uncertainties, while the LES/DNS are too expensive for real-world cases. DES/DDES/IDDES seem to be an ideal method
+									to generate a turbomachinery turbulence database. In this research, different state-of-the-art DES settings are evaluated for turbomachinery flows.
+									Their potential in predicting the turbulence kinetic energy and the eddy viscosity anisotropy is explored. (ongoing research)
 								</p>
 
-								<a href="images/stageB_Q_IQv_mod.gif" class="image"><img src="images/stageB_Q_IQv_mod.gif" alt="stageB_Q_gif" style="width:50%"></a>
-								<figcaption> Iso-surface of Q-criteria at Q=(u<sub>t</sub>/&tau;)<sup>2</sup>/50, peak efficiency condition of BUAA Stage B rotor, SA-DDES,
-										&Delta;=F<sub>KH</sub>[f<sub>d</sub>&Delta;<sub>max</sub>+(1-f<sub>d</sub>)&Delta;<sub>vol</sub>]  </figcaption>
+								<div class="row">
+								  <div class="column">
+										<a href="images/stageB_Q_IQv_mod.gif" class="image"><img src="images/stageB_Q_IQv_mod.gif" alt="stageB_Q_gif" style="width:70%"></a>
+										<figcaption> Iso-surface of Q-criteria at Q=(u<sub>t</sub>/&tau;)<sup>2</sup>/50, peak efficiency condition of BUAA Stage B rotor, SA-DDES,
+												&Delta;=F<sub>KH</sub>[f<sub>d</sub>&Delta;<sub>max</sub>+(1-f<sub>d</sub>)&Delta;<sub>vol</sub>]  </figcaption>
+									</div>
+								</div>
+								<p> </p>
 
-								<p>
+								<p style="text-align:justify">
                 Advisor: <a href="https://www.imperial.ac.uk/people/m.vahdati">Prof. Mehdi Vahdati</a>
 								</p>
 
@@ -60,22 +68,16 @@
 								<header>
 									<h3 id='SAUQ'><li> Parametric Uncertainty Quantification of RANS Turbulence Model</li></h3>
 								</header>
-								<p>
-
+								<p style="text-align:justify">
+                  RANS turbulence models are deficient in predicting compressor near-stall flows due to the uncertainties involved in the model development procedures.
+									In this research, the parametric uncertainty of the Spalart-Allmaras turbulence model is investigated in canonical flows and NASA Rotor 67. An efficient
+									metamodel-based UQ framework is established using the artificial neural network.
 								</p>
-
-								<div class="row">
-								  <div class="column">
-								    <a href="images/UQ_Framework.jpg" class="image"><img src="images/UQ_Framework.jpg" alt="UQ_Framework" style="width:80%"></a>
-										<figcaption>Illustration of the metamodel-based UQ framework</figcaption>
-									</div>
-
-									<div class="column">
-										<a href="images/NASA_nut_grad.jpg" class="image"><img src="images/NASA_nut_grad.jpg" alt="NASA_nut_grad" style="width:76%"></a>
-										<figcaption>Sensitivity of circumferentially averaged turbulent viscosity of Rotor 67 on Sparlart-Allmaras turbulence model coefficients </figcaption>
-								  </div>
-								</div>
-								<p> </p>
+								<p style="text-align:justify">
+									For the transonic axisymmetric bump and the backward-facing step cases, re-calibration of the model coefficients lead to contradictory results when considering multiple flow quantities of interest.
+									For the NACA 0012 airfoil and the NASA Rotor 67 stall cases, the parametric uncertainty range envelopes the 2D airfoil stall point, but not for the 3D compressor stall point.
+									These results highlight the need for a modified model form with respect to compressor flow features, i.e. 3D swirling motion and strong adverse pressure gradient.
+								</p>
 
 								<div class="row">
 								  <div class="column">
@@ -89,7 +91,7 @@
 								</div>
                 <p> </p>
 
-								<p>
+								<p style="text-align:justify">
 									Related publications:
 								</p>
 								<ul>
@@ -100,7 +102,7 @@
 										ASME Journal of Fluids Engineering, 2020, 142(9), 091501. </li>
 								</ul>
 
-								<p>
+								<p style="text-align:justify">
                 Advisor: <a href="https://www.imperial.ac.uk/people/m.vahdati">Prof. Mehdi Vahdati</a>
 								</p>
 
@@ -119,17 +121,17 @@
 								<header>
 									<h3 id='FlowInst'><li> Flow Instabilities in Centrifugal Compressors </li></h3>
 								</header>
-								<p>
+								<p style="text-align:justify">
                   Flow instabilities with various temporal and spatial scales narrow the stable operating range of centrifugal compressors. In this study, the pathology of a high pressure ratio centrifugal
 									compressor and the flow control method by self-recirculation casing treatment are investigated based on compressor rig tests with fast-response pressure measurements.
 								</p>
-								<p>
+								<p style="text-align:justify">
 									By performing the Fast Fourier Transform, diverse instabilities have been identified namely rotating instability, rotating stall, and surge in ascending order of temporal and spatial scale.
 									At low speeds, small-scale rotating instability develops and evolves into mid-scale impeller stall, which eventually triggers the compression system to large-scale surge. At middle speeds,
 									the compressor successively	experiences stable state, mild surge, rotating instability, and deep surge, where the mild surge region coincides with the inflection point of the compressor
 									S-shape pressure rise characteristic. At high	speeds, mild surge and deep surge abruptly occur without preceding rotating stall or rotating instability.
 								</p>
-								<p>
+								<p style="text-align:justify">
 									Self-recirculation casing treatment was developed to suppress the flow instabilities with various scales. For the small-scales and mid-scales, both the injection flow of the front
 									slot and the suction flow of the rear slot will restrain the formation of radial vortex connecting the impeller suction surface and the casing wall, thus the elimination of rotating instability
 									and impeller stall. For the large-scales, the flow recirculation process turns the pressure rise slope of the impeller and the compressor stage more negative, which stabilizes the compression
@@ -148,7 +150,7 @@
 								</div>
                 <p> </p>
 
-								<p>
+								<p style="text-align:justify">
 									Related publications:
 								</p>
 								<ul>
@@ -159,7 +161,7 @@
 										Flow Instability Evolution in High Pressure Ratio Centrifugal Compressor with Vaned Diffuser</a>,” Experimental Thermal and Fluid Science, 2018, 98, 719-730. </li>
 								</ul>
 
-								<p>
+								<p style="text-align:justify">
 								  Advisor: <a href="http://www.hy.tsinghua.edu.cn/publish/hyen/1694/2018/20180607111319289181453/20180607111319289181453_.html">Prof. Xinqian Zheng</a>
 								</p>
 
@@ -168,11 +170,11 @@
 									<h3 id='PerfOpt'><li> Transonic Flows in Centrifugal Compressors</li></h3>
 								</header>
 
-								<p>
+								<p style="text-align:justify">
                   Shock and shock-leakage interaction in transonic centrifugal compressors deteriorate the flow field and lower the compressor efficiency. In this study, the loss mechanism of transonic centrifugal
 									compressors and the flow control method by 3D blade leading edge are investigated via RANS CFD simulations.
 								</p>
-								<p>
+								<p style="text-align:justify">
                   Based on the detailed analysis of the entropy field, it was found that the shock-leakage interaction near the blade leading edge enhances the wake region and thus increases the local loss. A
 									parametric study of the blade leading edge design degrees of freedom was conducted, and phenomenological flow models were proposed to complement the understanding of their aerodynamic effects.
 									To obtain the optimal shape of the blade leading edge, an optimization framework based on the artificial neural network and the genetic algorithm was established. The final design achieves a 2.2%
@@ -191,7 +193,7 @@
 								</div>
                 <p> </p>
 
-								<p>
+								<p style="text-align:justify">
 								  Related publications:
 								</p>
 								<ul>
@@ -203,10 +205,10 @@
 										Mechanisms of Lean on the Performance of Transonic Centrifugal Compressor Impellers</a>,” AIAA Journal of Propulsion and Power, 2016, 32(5), 1220-1229. </li>
 								</ul>
 
-								<p>
+								<p style="text-align:justify">
 								  Advisor: <a href="http://www.hy.tsinghua.edu.cn/publish/hyen/1694/2018/20180607111319289181453/20180607111319289181453_.html">Prof. Xinqian Zheng</a>
 								</p>
-								<p>
+								<p style="text-align:justify">
 									*Winner of the Excellent Bachelor Thesis Award of Tsinghua University  (2015)
 								</p>
 
@@ -245,7 +247,7 @@
 					<ul id="copyright">
 						<li>&copy; 2020 Xiao He</li>
 						<li>All right reserved</li>
-						<li>Updated 17/08/2020</li>
+						<li>Updated 25/08/2020</li>
 						<li>Design: <a href="http://twitter.com/ajlkn">AJ</a></li>
 					</ul>
 
