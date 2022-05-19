@@ -22,6 +22,7 @@
 					<ul>
 						<li> <a href="#TurbHeader"> Turbulence Modeling</a> </li>
 						<ol>
+							<li> <a href="#SAPGomg"> A Turbo-Oriented Data-Driven Modification to the SA Turbulence Model </a> </li>
 							<li> <a href="#DDES"> Delayed-Detached Eddy Simulation for Separated Compressor Flows </a> </li>
 							<li> <a href="#SAUQ"> Parametric Uncertainty Quantification of RANS Turbulence Model </a> </li>
 						</ol>
@@ -40,16 +41,67 @@
 								<h2 id='TurbHeader'>Turbulence Modeling</h2>
 							</header>
 							<ol>
+								<!-- Turbulence Modeling: SAPGomg -->
+								<header>
+									<h3 id='SAPGomg'><li> A Turbo-Oriented Data-Driven Modification to the SA Turbulence Model</li></h3>
+								</header>
+								<p style="text-align:justify">
+									Spalart-Allmaras (SA) turbulence model is one of the most popular models for compressor aerodynamics. However, it often underpredicts the compressor stall margin. Such a deficiency
+									mainly routes from the empirical assumptions made in the constitutive relation (e.g., linear eddy viscosity relation) and the transport equation (e.g., equilibrium turbulence).
+									Previous researchers have proposed different flavors of the SA model to improve the model accuracy, including SA-QCR (quadratic constitutive relation), SA-RC (rotation and curvature
+									correction), SA-H (helicity correction) and SA-PG (pressure gradient correction). From an evaluation study on both compressor flows and canonical flows, however, none of the flavors
+									showed significant improment on compressor flows without deteriorating canonical flows.
+								</p>
+								<p style="text-align:justify">
+									In this research, we proposed a new flavor of the SA model namely SA-PG<sub> &omega; </sub>. The modification is based on a dimensionless vortical pressure gradient term (i.e., PG<sub>
+									&omega; </sub>). It effectively identified both the tip leakage blockage and the hub corner blockage; whereas in 2D flows and rotor-stator interface flows, the modification is automatically
+									switched off. To calibrate the new model coeffcients, Bayesian inference was adopted to give a robust coefficient set. The calibrated SA-PG<sub> &omega; </sub> showed improved prediction
+									on NASA Rotor 67, TUDa-GLR-OpenStage, BUAA Stage B Rotor and Lyon linear compressor cascade.
+
+								</p>
+
+								<div class="row">
+									<div class="column">
+										<a href="images\SAPGomg_Calibration.png" class="image"><img src="images\SAPGomg_Calibration.png" alt="SAPGomg_Calibration" style="width:60%"></a>
+										<figcaption> Calibration of model coefficients </figcaption>
+									</div>
+									<div class="column">
+										<a href="images\SAPGomg_R67_MAP.png" class="image"><img src="images\SAPGomg_R67_MAP.png" alt="SAPGomg_R67_MAP" style="width:75%"></a>
+										<figcaption> Validation on NASA Rotor 67 </figcaption>
+									</div>
+								</div>
+								<p> </p>
+
+								<p style="text-align:justify">
+									Related publication:
+								</p>
+								<ul>
+									<li> <u><strong>He, X.*</strong></u>, Zhao, F., and Vahdati, M., “A Turbo-Oriented Data-Driven Modification to the Spalart-Allmaras Turbulence Model,” 2022, ASME Paper No. GT2022-80456.
+										<a href="https://www.researchgate.net/publication/359404074_A_Turbo-Oriented_Data-Driven_Modification_to_the_Spalart-Allmaras_Turbulence_Model"> [preprint] </a>
+									</li>
+									<li> <u><strong>He, X.*</strong></u>, Zhao, F., and Vahdati, M., “Evaluation of Spalart-Allmaras Turbulence Model Forms for a Transonic Axial Compressor,” 2020, GPPS Paper No. GPPS-CH-2020-0013.
+										<a href="https://www.researchgate.net/publication/343601814_Evaluation_of_Spalart-Allmaras_Turbulence_Model_Forms_for_a_Transonic_Axial_Compressor"> [preprint] </a>
+										<a href="https://doi.org/10.33737/gpps20-tc-13"> [doi] </a>
+									</li>
+								</ul>
+
+								<p style="text-align:justify">
+                Advisor: <a href="https://www.imperial.ac.uk/people/m.vahdati">Prof. Mehdi Vahdati</a>
+								</p>
+
                 <!-- Turbulence Modeling: DDES -->
 								<header>
 									<h3 id='DDES'><li> Detached Eddy Simulation for Separated Compressor Flows</li></h3>
 								</header>
 								<p style="text-align:justify">
-									High-fidelity turbulence data are indispensable for training a data-drive RANS turbulence model. For turbomachinery applications, the measured
-									data often suffer from large uncertainties, while the LES/DNS are too expensive for real-world cases. DES-type methods seem to be ideal candidates
-									to generate a turbomachinery turbulence database. In this research, different state-of-the-art DES settings are evaluated for turbomachinery flows.
-									Their potential in predicting the turbulence kinetic energy and the eddy viscosity anisotropy is explored. Spectral proper orthogonal decomposition
-									(SPOD) is performed to analyze the modal component of the tip leakage flow. (ongoing research)
+									High-fidelity turbulence data are indispensable for training a data-drive RANS turbulence model. Hybrid RANS/LES methods (e.g., DES-type methods) are the most cost-effective for turbomachinery flows
+									featured by high Reynolds numbers and Mach numbers. In this research, we reviewed the state-of-the-art upgrades of DES methods and identified a combination of upgrades for compressor
+									tip leakage flow. The upgraded DES method is implemented in the in-house flow solver HADES, and then successfully validated against PIV measurement data of BUAA Stage B rotor.
+								</p>
+								<p style="text-align:justify">
+									Based on the database generated by the upgraded DES method, spectral proper orthogonal decomposition (SPOD) is then performed to analyze the modal component of the tip leakage flow. Large-scale
+									coherent structures are identified in the tip blockage zone downstream of the tip leakage vortex breakdown. These structures play a crucial role in turbulence modeling of tip leakage flow and non-synchronous
+									vibration of compressor blades.
 								</p>
 
 								<div class="row">
@@ -65,19 +117,19 @@
 								</div>
 								<p> </p>
 
-							<p style="text-align:justify">
-								Related publication:
-							</p>
-							<ul>
-								<li> <u><strong>He, X.*</strong></u>, Zhao, F., and Vahdati, M., “Detached Eddy Simulation: Recent Development and Application to Compressor Tip Leakage Flow,” ASME Journal of Turbomachinery, 2022, 144(1), 011009.
-									<a href="https://www.researchgate.net/publication/347355348_Detached_Eddy_Simulation_Recent_Development_and_Application_to_Compressor_Tip_Leakage_Flow"> [preprint] </a>
-									<a href="https://doi.org/10.1115/1.4052019"> [doi] </a>
-								</li>
-								<li> <u><strong>He, X.*</strong></u>, Fang, Z., Rigas, G., and Vahdati, M., “Spectral Proper Orthogonal Decomposition of Compressor Tip Leakage Flow,” Physics of Fluids, 2021, 33(10), 105105.
-									<a href="https://www.researchgate.net/publication/344903736_Spectral_Proper_Orthogonal_Decomposition_of_Compressor_Tip_Leakage_Flow"> [preprint] </a>
-									<a href="https://doi.org/10.1063/5.0065929"> [doi] </a>
-								</li>
-							</ul>
+								<p style="text-align:justify">
+									Related publication:
+								</p>
+								<ul>
+									<li> <u><strong>He, X.*</strong></u>, Zhao, F., and Vahdati, M., “Detached Eddy Simulation: Recent Development and Application to Compressor Tip Leakage Flow,” ASME Journal of Turbomachinery, 2022, 144(1), 011009.
+										<a href="https://www.researchgate.net/publication/347355348_Detached_Eddy_Simulation_Recent_Development_and_Application_to_Compressor_Tip_Leakage_Flow"> [preprint] </a>
+										<a href="https://doi.org/10.1115/1.4052019"> [doi] </a>
+									</li>
+									<li> <u><strong>He, X.*</strong></u>, Fang, Z., Rigas, G., and Vahdati, M., “Spectral Proper Orthogonal Decomposition of Compressor Tip Leakage Flow,” Physics of Fluids, 2021, 33(10), 105105.
+										<a href="https://www.researchgate.net/publication/344903736_Spectral_Proper_Orthogonal_Decomposition_of_Compressor_Tip_Leakage_Flow"> [preprint] </a>
+										<a href="https://doi.org/10.1063/5.0065929"> [doi] </a>
+									</li>
+								</ul>
 
 								<p style="text-align:justify">
                 Advisor: <a href="https://www.imperial.ac.uk/people/m.vahdati">Prof. Mehdi Vahdati</a>, <a href="https://www.imperial.ac.uk/people/g.rigas">Dr. Georgios Rigas</a>
@@ -269,15 +321,16 @@
 						<ul>
 							<li><a href="index.html">Home</a></li>
 							<li class="current"><a href="#">Research</a></li>
-							<li><a href="publication.html">Publications</a></li>
+							<li><a href="software.html">Software</a></li>
+							<li><a href="publication.html">Publication</a></li>
 						</ul>
 					</nav>
 
 				<!-- Copyright -->
 					<ul id="copyright">
-						<li>&copy; 2021 Xiao He</li>
+						<li>&copy; 2022 Xiao He</li>
 						<li>All right reserved</li>
-						<li>Updated 28/08/2021</li>
+						<li>Updated 19/05/2022</li>
 						<li>Design: <a href="http://twitter.com/ajlkn">AJ</a></li>
 					</ul>
 

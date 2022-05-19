@@ -178,6 +178,13 @@ figcaption {
 		text-align: center
 	}
 
+/* column3  XH Mod */
+	.column3 {
+	  float: left;
+	  width: 33%;
+	  padding: 5px;
+		text-align: center
+	}
 
 /* Row */
 
