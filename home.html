@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<!--
+	Striped by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Home - HeX</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123362701-2"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-123362701-2');
+		</script>
+	</head>
+	<body class="is-preload">
+
+		<!-- Content -->
+			<div id="content">
+				<div class="inner">
+
+					<!-- Post -->
+						<article class="box post post-excerpt">
+							<header>
+								<!--
+									Note: Titles and subtitles will wrap automatically when necessary, so don't worry
+									if they get too long. You can also remove the <p> entirely if you don't
+									need a subtitle.
+								-->
+								<h2>Hello</h2>
+							</header>
+							<p style="text-align:justify">
+								This is <strong>Xiao He</strong>. Welcome to my homepage!
+							</p>
+
+							<p style="text-align:justify">
+								I am a postdoctoral research associate with <a href="https://www.imperial.ac.uk/people/f.montomoli">Prof. Francesco Montomoli</a>
+								in Department of Aeronautics, Imperial College London. Previously I did PhD training under the supervision of
+								<a href="https://www.imperial.ac.uk/people/m.vahdati">Prof. Mehdi Vahdati</a>	in Department of Mechanical Engineering, Imperial College London.
+								My research interest and keywords are illustrated below, which in general	includes the field of fluid mechanics, data science and their applications
+								to energy systems (especially turbomachinery). Feel free to find out more on this website.
+							</p>
+
+							<div class="row">
+								<div class="column">
+									<a href="images\Research_Interest.png" class="image"><img src="images\Research_Interest.png" alt="Research_Interest" style="width:90%"></a>
+								</div>
+								<div class="column">
+									<a href="images\Word_Cloud.png" class="image"><img src="images\Word_Cloud.png" alt="Word_Cloud" style="width:90%"></a>
+								</div>
+							</div>
+
+							<a href="#" class="image featured"><img src="images/windturbine.jpg" alt="" /></a>
+
+						</article>
+
+
+				</div>
+			</div>
+
+			<!-- Sidebar -->
+			<div id="sidebar-container"></div>
+
+			<script>
+	        // Fetch the sidebar content and insert it into the sidebar-container div
+	        fetch('sidebar.html')
+	            .then(response => response.text())
+	            .then(data => {
+	                document.getElementById('sidebar-container').innerHTML = data;
+	            })
+	            .catch(error => console.error('Error fetching sidebar:', error));
+	    </script>
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
