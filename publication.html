@@ -13,7 +13,7 @@
 	</head>
 	<body class="is-preload">
 
-		<div id="sidebar-container"></div>
+		<div id="sidebar"></div>
 
 		<!-- Content -->
 			<div id="content">
@@ -265,7 +265,7 @@
 				fetch('sidebar.html')
 						.then(response => response.text())
 						.then(data => {
-								document.getElementById('sidebar-container').innerHTML = data;
+								document.getElementById('sidebar').innerHTML = data;
 						})
 						.catch(error => console.error('Error fetching sidebar:', error));
 		</script>

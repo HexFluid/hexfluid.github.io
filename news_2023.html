@@ -13,6 +13,8 @@
 	</head>
 	<body class="is-preload">
 
+		<div id="sidebar"></div>
+
 		<!-- Content -->
 			<div id="content">
 				<div class="inner">
@@ -120,14 +122,12 @@
 			</div>
 
 			<!-- Sidebar -->
-			<div id="sidebar-container"></div>
-
 			<script>
 	        // Fetch the sidebar content and insert it into the sidebar-container div
 	        fetch('sidebar.html')
 	            .then(response => response.text())
 	            .then(data => {
-	                document.getElementById('sidebar-container').innerHTML = data;
+	                document.getElementById('sidebar').innerHTML = data;
 	            })
 	            .catch(error => console.error('Error fetching sidebar:', error));
 	    </script>
