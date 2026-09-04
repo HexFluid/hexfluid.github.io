@@ -9,13 +9,13 @@
 		<title>Lab - HeX Lab</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="/assets/css/main.css" />
 	</head>
 	<body class="is-preload">
 
 		<div id="sidebar">
 			<!-- Logo -->
-	      <h1 id="logo"><a href="index.html">HeX Lab</a></h1>
+	      <h1 id="logo"><a href="/en/home.html">HeX Lab</a></h1>
 		</div>
 
 		<!-- Content -->
@@ -42,19 +42,19 @@
 					</header>
 
 					<p style="text-align:justify">
-						<a>HADES</a>: an in-house finitie volume aerodyanmics solver for internal and external flows.
+						<a>HADES</a>: an in-house finite volume aerodynamics solver for internal and external flows.
 					</p>
-					<a class="image centered"><img src="images/hades_gallery.png" alt="" style="width:100%" /></a>
+					<a class="image centered"><img src="/images/hades_gallery.png" alt="" style="width:100%" /></a>
 					<hr />
 
-					<a href="https://github.com/HexFluid/spod_python" class="image centered"><img src="images/SPOD_logo.png" alt="" style="width:35%" /></a>
+					<a href="https://github.com/HexFluid/spod_python" class="image centered"><img src="/images/SPOD_logo.png" alt="" style="width:35%" /></a>
 					<p style="text-align:justify">
 						<a href="https://github.com/HexFluid/spod_python">SPOD_Python</a>: an open-source Pythonic realization of SPOD
 						and its applications to a range of fluid mechanics problems.
 					</p>
 					<hr />
 
-					<a href="https://github.com/HexFluid/TurbAna" class="image centered"><img src="images/TurbAna_logo.png" alt="" style="width:35%" /></a>
+					<a href="https://github.com/HexFluid/TurbAna" class="image centered"><img src="/images/TurbAna_logo.png" alt="" style="width:35%" /></a>
 					<p style="text-align:justify">
 						<a href="https://github.com/HexFluid/TurbAna">TurbAna</a>: a Python toolkit that calculates and visualizes
 						turbulence anisotropy and turbulent viscosity from Reynolds stress components.
@@ -67,7 +67,7 @@
 		<!-- Sidebar -->
 		<script>
 				// Fetch the sidebar content and insert it into the sidebar-container div
-				fetch('sidebar.html')
+				fetch('/en/sidebar.html')
 						.then(response => response.text())
 						.then(data => {
 								document.getElementById('sidebar').innerHTML = data;
@@ -76,11 +76,11 @@
 		</script>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<script src="/assets/js/jquery.min.js"></script>
+			<script src="/assets/js/browser.min.js"></script>
+			<script src="/assets/js/breakpoints.min.js"></script>
+			<script src="/assets/js/util.js"></script>
+			<script src="/assets/js/main.js"></script>
 
 	</body>
 </html>

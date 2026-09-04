@@ -9,13 +9,13 @@
 		<title>Research - HeX Lab</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="/assets/css/main.css" />
 	</head>
 	<body class="is-preload">
 
 		<div id="sidebar">
 			<!-- Logo -->
-	      <h1 id="logo"><a href="index.html">HeX Lab</a></h1>
+	      <h1 id="logo"><a href="/en/home.html">HeX Lab</a></h1>
 		</div>
 
 		<!-- Content -->
@@ -324,7 +324,7 @@
 		<!-- Sidebar -->
 		<script>
 				// Fetch the sidebar content and insert it into the sidebar-container div
-				fetch('sidebar.html')
+				fetch('/en/sidebar.html')
 						.then(response => response.text())
 						.then(data => {
 								document.getElementById('sidebar').innerHTML = data;
